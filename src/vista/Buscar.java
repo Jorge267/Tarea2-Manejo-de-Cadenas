@@ -10,7 +10,7 @@ package vista;
  */
 public class Buscar extends javax.swing.JDialog {
 
-        private Ventana ventanaPrincipal;
+    private Ventana ventanaPrincipal;
 
     public Buscar(java.awt.Frame parent, boolean modal) {
         if(parent instanceof Ventana ventana) {
@@ -45,38 +45,46 @@ public class Buscar extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(txt_texto_ingresado, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap()
+                        .addComponent(txt_texto_ingresado, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
+                        .addGap(98, 98, 98)
                         .addComponent(btn_buscar)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(txt_texto_ingresado, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(61, 61, 61)
+                .addContainerGap()
+                .addComponent(txt_texto_ingresado, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_buscar)
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
-        String textoBuscado= txt_texto_ingresado.getText();
-        String textoEnArea= ventanaPrincipal.getTxtAreaTexto().getText();
+           String textoBuscado = txt_texto_ingresado.getText().trim(); 
+    String textoEnArea = ventanaPrincipal.getTxtAreaTexto().getText();
 
-        int posicion= textoEnArea.indexOf(textoBuscado);
+    System.out.println("Texto a buscar: " + textoBuscado);
+    System.out.println("Texto en el área de texto: " + textoEnArea);
 
-        if (posicion >= 0) {
-            ventanaPrincipal.getTxtAreaTexto().setCaretPosition(posicion);
-            ventanaPrincipal.getTxtAreaTexto().select(posicion, posicion + textoBuscado.length());
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "Texto no encontrado", "Resultado de búsqueda", javax.swing.JOptionPane.INFORMATION_MESSAGE);
-        }
+    if (textoBuscado.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Ingrese un texto para buscar.", "Advertencia", javax.swing.JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+    
+    int posicion = textoEnArea.toLowerCase().indexOf(textoBuscado.toLowerCase()); 
+
+    if (posicion >= 0) {
+        ventanaPrincipal.getTxtAreaTexto().setCaretPosition(posicion);
+        ventanaPrincipal.getTxtAreaTexto().select(posicion, posicion + textoBuscado.length());
+    } else {
+        javax.swing.JOptionPane.showMessageDialog(this, "Texto no encontrado", "Resultado de búsqueda", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+    }
     }//GEN-LAST:event_btn_buscarActionPerformed
 
 

@@ -7,6 +7,9 @@
         <Menu class="javax.swing.JMenu" name="bar_archivo">
           <Properties>
             <Property name="text" type="java.lang.String" value="Archivo"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calibri Light" size="14" style="2"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
@@ -29,6 +32,9 @@
         <Menu class="javax.swing.JMenu" name="bar_editar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Editar"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calibri Light" size="14" style="2"/>
+            </Property>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="item_copiar">
@@ -149,7 +155,7 @@
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jScrollPane2" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -160,41 +166,41 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
               <Component id="btn_procesar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="lbl_repeticiones_a" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_repeticiones_e" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_repeticiones_i" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_repeticiones_o" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_repeticiones_u" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_cant_pablabras_par" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_cant_palabras_impar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="22" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lbl_repeticiones_a" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_repeticiones_e" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_repeticiones_i" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_repeticiones_o" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_repeticiones_u" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_cant_pablabras_par" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="lbl_cant_palabras_impar" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
@@ -233,15 +239,15 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="147" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" pref="147" max="-2" attributes="0"/>
-                  <EmptySpace pref="360" max="32767" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="345" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -258,6 +264,9 @@
         <Component class="javax.swing.JTextArea" name="txt_texto_murcielago">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calibri Light" size="14" style="2"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
           </Properties>
         </Component>
@@ -265,6 +274,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btn_procesar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="PROCESAR INFORMACION"/>
       </Properties>
       <Events>
@@ -273,151 +285,241 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Longitud del texto:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Total de palabras:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Primera letra del texto:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ultima letra del texto:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Letra central del texto:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Primera palabra:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Palabra del medio:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ultima palabra:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_longitud_texto">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_total_palabras">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_primera_letra">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_ultima_letra">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_letra_central">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_primera_palabra">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_palabra_central">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_ultima_palabra">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repeticiones de &quot;A&quot; / &quot;a&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repeticiones de &quot;E&quot; / &quot;e&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_cant_palabras_impar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_repeticiones_a">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_repeticiones_e">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_repeticiones_i">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_repeticiones_o">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repeticiones de &quot;I&quot; / &quot;i&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_repeticiones_u">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repeticiones de &quot;O&quot; / &quot;o&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbl_cant_pablabras_par">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="_"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel13">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repeticiones de &quot;U&quot; / &quot;u&quot;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cant de palabras con longitud par"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel15">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Candara Light" size="14" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Cant de palabras con longitud impar"/>
       </Properties>
     </Component>
@@ -431,6 +533,9 @@
         <Component class="javax.swing.JTextArea" name="txt_area_texto">
           <Properties>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calibri Light" size="14" style="2"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
           </Properties>
         </Component>

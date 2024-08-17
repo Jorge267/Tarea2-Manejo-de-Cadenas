@@ -67,7 +67,7 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
     }
     
     public javax.swing.JTextArea getTxtAreaTexto() {
-        return txt_texto_murcielago;
+        return txt_area_texto;
     }
     
     public void pasteFromClipboard() {
@@ -78,7 +78,7 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
             // Verificar que el contenido sea de tipo texto
             if (t != null && t.isDataFlavorSupported(DataFlavor.stringFlavor)) {
                 String texto = (String) t.getTransferData(DataFlavor.stringFlavor);
-                txt_texto_murcielago.insert(texto, txt_texto_murcielago.getCaretPosition());  // Insertar el texto en la posición actual del cursor
+                txt_area_texto.insert(texto, txt_area_texto.getCaretPosition());  // Insertar el texto en la posición actual del cursor
             }
         } catch (Exception e) {
             System.out.println("Error al pegar el contenido del portapapeles: " + e.getMessage());
@@ -139,9 +139,11 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         txt_texto_murcielago.setColumns(20);
+        txt_texto_murcielago.setFont(new java.awt.Font("Calibri Light", 2, 14)); // NOI18N
         txt_texto_murcielago.setRows(5);
         jScrollPane1.setViewportView(txt_texto_murcielago);
 
+        btn_procesar.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         btn_procesar.setText("PROCESAR INFORMACION");
         btn_procesar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,71 +151,103 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel1.setText("Longitud del texto:");
 
+        jLabel2.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel2.setText("Total de palabras:");
 
+        jLabel3.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel3.setText("Primera letra del texto:");
 
+        jLabel4.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel4.setText("Ultima letra del texto:");
 
+        jLabel5.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel5.setText("Letra central del texto:");
 
+        jLabel6.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel6.setText("Primera palabra:");
 
+        jLabel7.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel7.setText("Palabra del medio:");
 
+        jLabel8.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel8.setText("Ultima palabra:");
 
+        lbl_longitud_texto.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_longitud_texto.setText("_");
 
+        lbl_total_palabras.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_total_palabras.setText("_");
 
+        lbl_primera_letra.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_primera_letra.setText("_");
 
+        lbl_ultima_letra.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_ultima_letra.setText("_");
 
+        lbl_letra_central.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_letra_central.setText("_");
 
+        lbl_primera_palabra.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_primera_palabra.setText("_");
 
+        lbl_palabra_central.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_palabra_central.setText("_");
 
+        lbl_ultima_palabra.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_ultima_palabra.setText("_");
 
+        jLabel9.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel9.setText("Repeticiones de \"A\" / \"a\"");
 
+        jLabel10.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel10.setText("Repeticiones de \"E\" / \"e\"");
 
+        lbl_cant_palabras_impar.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_cant_palabras_impar.setText("_");
 
+        lbl_repeticiones_a.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_repeticiones_a.setText("_");
 
+        lbl_repeticiones_e.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_repeticiones_e.setText("_");
 
+        lbl_repeticiones_i.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_repeticiones_i.setText("_");
 
+        lbl_repeticiones_o.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_repeticiones_o.setText("_");
 
+        jLabel11.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel11.setText("Repeticiones de \"I\" / \"i\"");
 
+        lbl_repeticiones_u.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_repeticiones_u.setText("_");
 
+        jLabel12.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel12.setText("Repeticiones de \"O\" / \"o\"");
 
+        lbl_cant_pablabras_par.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         lbl_cant_pablabras_par.setText("_");
 
+        jLabel13.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel13.setText("Repeticiones de \"U\" / \"u\"");
 
+        jLabel14.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel14.setText("Cant de palabras con longitud par");
 
+        jLabel15.setFont(new java.awt.Font("Candara Light", 2, 14)); // NOI18N
         jLabel15.setText("Cant de palabras con longitud impar");
 
         txt_area_texto.setColumns(20);
+        txt_area_texto.setFont(new java.awt.Font("Calibri Light", 2, 14)); // NOI18N
         txt_area_texto.setRows(5);
         jScrollPane2.setViewportView(txt_area_texto);
 
         bar_archivo.setText("Archivo");
+        bar_archivo.setFont(new java.awt.Font("Calibri Light", 2, 14)); // NOI18N
 
         jMenuItem6.setText("Abrir");
         bar_archivo.add(jMenuItem6);
@@ -227,6 +261,7 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
         jMenuBar1.add(bar_archivo);
 
         bar_editar.setText("Editar");
+        bar_editar.setFont(new java.awt.Font("Calibri Light", 2, 14)); // NOI18N
 
         item_copiar.setText("Copiar");
         item_copiar.addActionListener(new java.awt.event.ActionListener() {
@@ -325,40 +360,39 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(171, 171, 171)
+                .addGap(120, 120, 120)
                 .addComponent(btn_procesar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lbl_repeticiones_a)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_repeticiones_e)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_repeticiones_i)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_repeticiones_o)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_repeticiones_u)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_cant_pablabras_par)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_cant_palabras_impar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel10)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel15))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(lbl_repeticiones_a)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_repeticiones_e)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_repeticiones_i)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_repeticiones_o)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_repeticiones_u)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_cant_pablabras_par)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(lbl_cant_palabras_impar)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel1)
@@ -392,14 +426,14 @@ public class Ventana extends javax.swing.JFrame implements ClipboardOwner{
                             .addComponent(lbl_palabra_central)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(lbl_ultima_palabra))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(16, 16, 16)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(360, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(345, Short.MAX_VALUE)))
         );
 
         pack();
